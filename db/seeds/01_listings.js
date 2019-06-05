@@ -24,7 +24,8 @@ exports.seed = function (knex) {
                   sqfoot: 1819,
                   sqlot: 8146,
                   description: "Quiet Neighborhood in Ft worth, Everman ISD. 4 Bedroom 2 bathroom, one owner home, well kept. Upgraded lighting, ceiling fans in all bedrooms. No neighbors behind or to your right, backing up to an open field. Corner lot with large back yard. Do not miss out on this home!",
-                  imgUrl: "https://ap.rdcpix.com/2086699541/b1b81230c670fb7de2df5b2d35420d45l-m0xd-w1020_h770_q80.jpg"
+                  imgUrl: "https://ap.rdcpix.com/2086699541/b1b81230c670fb7de2df5b2d35420d45l-m0xd-w1020_h770_q80.jpg",
+                  sold: true
                 },
             ])
         })

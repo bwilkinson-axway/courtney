@@ -6,7 +6,7 @@ exports.up = knex => {
         table.integer('beds')
         table.integer('baths')
         table.text('description')
-        table.string('imgUrl', 500)
+        table.text('imgUrl', 500)
         table.boolean('sold')
         table.integer('sqfoot')
         table.integer('sqlot')
