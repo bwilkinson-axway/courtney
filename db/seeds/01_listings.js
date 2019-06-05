@@ -7,7 +7,7 @@ exports.seed = function (knex) {
             return knex('listings').insert([
                 {
                   address: "5805 Melstone Dr",
-                  listPrice: 223,000,
+                  listPrice: 223000,
                   beds: 3,
                   baths: 3,
                   sqfoot: 1704,
@@ -18,7 +18,7 @@ exports.seed = function (knex) {
                 },
                 {
                   address: "10248 Almondtree Dr",
-                  listPrice: 300,000,
+                  listPrice: 300000,
                   beds: 4,
                   baths: 2,
                   sqfoot: 1819,
