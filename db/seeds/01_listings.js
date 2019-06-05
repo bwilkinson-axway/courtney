@@ -1,10 +1,10 @@
 exports.seed = function (knex) {
     // Deletes ALL existing entries
-    return knex('users')
+    return knex('listings')
         .del()
         .then(function () {
             // Inserts seed entries
-            return knex('users').insert([
+            return knex('listings').insert([
                 {
                   address: "5805 Melstone Dr",
                   listPrice: 223,000,
