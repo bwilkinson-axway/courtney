@@ -12,7 +12,7 @@ exports.seed = function (knex) {
                   baths: 3,
                   sqfoot: 1704,
                   sqlot: 7231,
-                  description: "Adorable one story in charming Arlington neighborhood. Updates throughout, from the beautiful wood looking luxury vinyl plank floors to the gorgeous light fixtures! You will love entertaining in this open living and dining with double doors to a large backyard! Amazing master bathroom perfect for unwinding after a busy day! Seller is providing a one year home warranty! Don't miss out on this spectacular home!!",
+                  description: "Adorable one story in charming Arlington neighborhood. Updates throughout, from the beautiful wood looking luxury vinyl plank floors to the gorgeous light fixtures! You will love entertaining in this open living and dining with double doors to a large backyard!",
                   imgUrl: "https://ap.rdcpix.com/2918851701/da5b0f6ce87d929d8750e347156c4358l-m0xd-w1020_h770_q80.jpg",
                   sold: true
                 },
