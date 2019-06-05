@@ -1,4 +1,4 @@
-let connectionString = process.platform === 'win32' ? 'postgres://postgres:root@localhost/forum' : 'postgres://localhost/forum'
+let connectionString = process.platform === 'win32' ? 'postgres://postgres:root@localhost/bradtxufl' : 'postgres://localhost/bradtxufl'
 
 module.exports = {
     development: {
