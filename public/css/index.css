@@ -111,9 +111,75 @@ a:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .yellow {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+
+.featured {
+  display: flex;
+  flex-direction: row;
+}
+
+.services {
+  background-color: #e2b13f;
+  height: 50vh;
+  align-items: center;
+}
+
+#serve {
+  width: 10vw;
+  background-color: white;
+  padding: 15px;
+}
+
+#selling {
+  width: 10vw;
+}
+
+#buying {
+  width: 10vw;
+}
+
+.stack {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-right: 1vw;
+}
+
+#feat {
+  background-color: #e2b13f;
+  margin-left: 1vw;
+  padding: 1vw;
+}
+
+#feat h1 {
+  margin-bottom: 3vw;
+}
+
+#footcontact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  margin: 5px 2vw;
+}
+
+.btn-danger {
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  border-radius: 0;
 }
