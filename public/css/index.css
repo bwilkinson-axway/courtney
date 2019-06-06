@@ -3,5 +3,5 @@ body {
 }
 
 .jumbotron {
-  background-image: url('../../kitchen.jpg');
+  background-image: url('../kitchen.jpg');
 }
