@@ -5,19 +5,48 @@
 <head>
     <% include ../partials/head %>
 </head>
-<body class="container">
+<body class="container-fluid">
 
-<header>
+<div class='photo container-fluid'>
+<header class='container'>
     <% include ../partials/header %>
     <link rel='stylesheet' href="./css/index.css">
 </header>
-
-<main>
-    <div class="jumbotron fluid">
-        <h1>This is great</h1>
-        <p>Welcome to templating using EJS</p>
+<div class="jumbotron container">
+<div class='row'>
+  <div class='splash'>
+    <h1>Find your home in Dallas / Fort Worth.</h1>
+    <div class='links'>
+        <a class="listingsbutt" href="/">
+            LISTINGS <span class='bold'></span>
+        </a>
+        <a class="contactbutt" href="/">
+            CONTACT COURTNEY NOW
+        </a>
     </div>
+  </div>
+  <div class='blank'>
+
+  </div>
+</div>
+</div>
+</div>
+
+<div class='review'>
+  <div class='yellow container'>
+    <div id='sunset'>
+      <img src='logo.png'  id='logo' alt='logo'></img>
+    </div>
+    <div id='review'>
+      <h3>"Without a doubt, I confidently recommend Courtney for all of your real estate needs."</h3>
+      <p> - Jeremy Dean </p>
+    </div>
+  </div>
+</div>
+<main>
+
 </main>
+
 
 <footer>
     <% include ../partials/footer %>

@@ -1,7 +1,119 @@
+html,
 body {
-    color: purple;
+    padding: 0;
+    margin: 0;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.navbar-default .navbar-brand {
+  color: #e2b13f;
+  padding: 11px;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #e2b13f;
+}
+
+.navbar.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-brand {
+  border: solid white;
+  margin: 15px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  margin: 15px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #e2b13f;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.photo {
+  background-image: url('kitchen.jpg');
+  height: 90vh;
 }
 
 .jumbotron {
-  background-image: url('../kitchen.jpg');
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.blank {
+  width: 50vw;
+}
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 40vh;
+}
+
+.jumbotron h1 {
+  text-align: left;
+}
+
+.links {
+  margin-top: 15px;
+}
+
+.listingsbutt {
+  color: black;
+  background-color: white;
+  border: solid white;
+  padding: 15px;
+}
+
+.contactbutt {
+  color: white;
+  border: solid white;
+  padding: 15px;
+}
+
+a:hover {
+  color: #e2b13f;
+  text-decoration: none;
+}
+
+.review {
+  background-color: #e2b13f;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#sunset {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+
+#review {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.yellow {
+  display: flex;
+  flex-direction: row;
 }
