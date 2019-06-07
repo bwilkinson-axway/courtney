@@ -22,11 +22,11 @@ app.get('/contact', (req, res) => {
     res.render('pages/contact')
 })
 
-app.get('/admin/users', (req, res) => {
-    knex('users')
+app.get('/admin/thisismyoldroomhereitis100', (req, res) => {
+    knex('contacts')
         .then(users => {
             console.log(users)
-            res.render('pages/users', { users })
+            res.render('pages/contacts', { users })
         })
 
 })

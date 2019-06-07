@@ -5,6 +5,8 @@ exports.up = function(knex, Promise) {
       table.string('name', 100)
       table.string('phone', 100)
       table.string('email')
+      table.text('body')
+      table.boolean('newsletter')
       table.timestamps(true, true)
   })
 };
