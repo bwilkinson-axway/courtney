@@ -23,10 +23,11 @@ app.get('/contact', (req, res) => {
 })
 
 app.get('/admin/thisismyoldroomhereitis100', (req, res) => {
+    console.log('hi')
     knex('contacts')
-        .then(users => {
-            console.log(users)
-            res.render('pages/contacts', { users })
+        .then(contacts => {
+            console.log(contacts)
+            res.render('pages/contacts', { contacts })
         })
 
 })
