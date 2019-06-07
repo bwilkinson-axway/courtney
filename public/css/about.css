@@ -1,3 +1,113 @@
+html,
 body {
-    color: salmon;
+    padding: 0;
+    margin: 0;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.navbar-default .navbar-brand {
+  color: #e2b13f;
+  padding: 11px;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #e2b13f;
+}
+
+.navbar.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-brand {
+  border: solid gray;
+  margin: 15px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: gray;
+  margin: 15px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #e2b13f;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.photo {
+  background-image: url('marble.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+
+.jumbotron {
+  background-color: transparent;
+  border: none;
+  color: gray;
+  text-shadow: 1px 1px 1px white,
+                -1px -1px 1px white;
+}
+
+#blerb {
+  display: flex;
+  align-items: space-around;
+  flex-direction: column;
+}
+
+#blerb a {
+  width: 12vw;
+  color: gray;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+}
+
+#blerb a:hover {
+  text-decoration: none;
+  color: #e2b13f;
+}
+
+.contactbutt {
+  color: black;
+  background-color: white;
+  border: solid #e2b13f;
+  padding: 15px;
+  margin-top: 2vh;
+}
+
+#footcontact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  margin: 5px 2vw;
+}
+
+.btn-danger {
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+#face {
+  width: 30vw;
+}
+
+#splash {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  justify-content: space-around;
 }
