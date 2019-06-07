@@ -18,6 +18,10 @@ app.get('/about', (req, res) => {
     res.render('pages/about')
 })
 
+app.get('/contact', (req, res) => {
+    res.render('pages/contact')
+})
+
 app.get('/admin/users', (req, res) => {
     knex('users')
         .then(users => {
