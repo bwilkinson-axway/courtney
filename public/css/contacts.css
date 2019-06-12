@@ -39,3 +39,42 @@ body {
 .card {
   border: solid black;
 }
+
+@media only screen and (max-width: 980px) {
+
+
+.photo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+label {
+  font-size: 40px;
+}
+
+.form-check-label {
+  font-size: 20px;
+}
+
+.navbar-default .navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-default .navbar-nav>li>a {
+  font-size: 60px;
+  margin-top: 30px;
+}
+
+.navbar-default .navbar-brand {
+  font-size: 60px;
+  padding: 50px;
+  padding-bottom: 80px;
+}
+
+.card {
+  font-size: 40px;
+}
+
+}
