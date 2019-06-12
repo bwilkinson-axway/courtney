@@ -227,6 +227,7 @@ a:hover {
 
 .yellow {
   flex-direction: column;
+  height: auto;
 }
 
 #serve, #selling, #buying {
@@ -236,6 +237,7 @@ a:hover {
 
 .jumbotron h1 {
   font-size: 100px;
+  margin-top: 40vh;
 }
 
 .links {
