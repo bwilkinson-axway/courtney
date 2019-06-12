@@ -98,3 +98,38 @@ body {
   text-shadow: 1px 1px 1px black,
                 -1px -1px 1px black;
 }
+
+@media only screen and (max-width: 980px) {
+
+
+.photo {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.navbar-default .navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-default .navbar-nav>li>a {
+  font-size: 60px;
+  margin-top: 30px;
+}
+
+.navbar-default .navbar-brand {
+  font-size: 60px;
+  padding: 50px;
+  padding-bottom: 80px;
+}
+
+.jumbotron h1 {
+  font-size: 100px;
+}
+
+.hide {
+  display: hidden;
+}
+
+}
