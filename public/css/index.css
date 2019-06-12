@@ -208,7 +208,9 @@ a:hover {
   background-size: cover;
   height: auto;
 }
-
+.navbar-default {
+  margin-bottom: 200px;
+}
 .navbar-default .navbar-nav {
   display: flex;
   flex-direction: row;
@@ -234,6 +236,7 @@ a:hover {
   width: 80vw;
   font-size: 30px;
 }
+
 
 .jumbotron h1 {
   font-size: 100px;
