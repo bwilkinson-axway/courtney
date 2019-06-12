@@ -53,6 +53,22 @@ app.post('/contact', (req, res) => {
         })
 })
 
+app.post('/emailonly', (req, res) => {
+    const updatedBody = {
+        name: null,
+        email: req.body.email,
+        phone: null,
+        body: null,
+        newsletter: true
+    }
+    console.log(updatedBody)
+    knex('contacts')
+        .insert(updatedBody)
+        .then(() => {
+          res.redirect('/')
+        })
+})
+
 app.get('/contact/:id', (req, res) => {
   knex('contacts').where('id', req.params.id).del()
   .then(() => {

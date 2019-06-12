@@ -13,10 +13,10 @@
     </div>
     <div id='emailsubmit'>
       <h4>Stay up to date and join my email list!</h4>
-      <form>
+      <form method='post' action='/emailonly'>
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <input name='email' type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
           <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
         </div>
         <button type="submit" class="btn btn-danger">Submit</button>
