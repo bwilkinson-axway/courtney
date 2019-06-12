@@ -154,6 +154,11 @@ a:hover {
   margin-right: 1vw;
 }
 
+.bulk {
+  display: flex;
+  flex-direction: row;
+}
+
 #feat {
   background-color: #e2b13f;
   margin-left: 1vw;
@@ -182,4 +187,49 @@ a:hover {
 
 .form-control {
   border-radius: 0;
+}
+
+@media only screen and (max-width: 980px) {
+
+.featured {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+#feat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.navbar-default .navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-default .navbar-nav>li>a {
+  font-size: 60px;
+}
+
+.navbar-default .navbar-brand {
+  font-size: 60px;
+  padding: 50px;
+  padding-bottom: 80px; 
+}
+
+.yellow {
+  flex-direction: column;
+}
+
+#serve, #selling, #buying {
+  width: 80vw;
+}
+
 }
