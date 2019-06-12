@@ -105,7 +105,15 @@ body {
 .photo {
   background-repeat: no-repeat;
   background-size: cover;
+  height: auto;
+}
 
+label {
+  font-size: 40px;
+}
+
+.form-check-label {
+  font-size: 20px;
 }
 
 .navbar-default .navbar-nav {
@@ -130,6 +138,10 @@ body {
 
 .hide {
   display: hidden;
+}
+
+form {
+  margin-bottom: 40px;
 }
 
 }
