@@ -5,13 +5,14 @@
 
 <head>
     <% include ../partials/head %>
-    <link rel='stylesheet' href="./css/contact.css">
+    <link rel='stylesheet' href="../css/contacts.css">
 </head>
 
 <body class="container">
 
     <header>
         <% include ../partials/header %>
+
     </header>
 
     <main>
@@ -23,14 +24,12 @@
           <p>email: <%= contacts[i].email %></p>
           <p>body: <%= contacts[i].body %></p>
           <p>newsletter: <%= contacts[i].newsletter %></p>
+          <a href='/contact/<%=contacts[i].id%>'>Delete</a>
         </div>
         <% } %>
       </div>
     </main>
 
-    <footer>
-        <% include ../partials/footer %>
-    </footer>
 </body>
 
 </html>

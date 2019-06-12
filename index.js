@@ -22,6 +22,10 @@ app.get('/contact', (req, res) => {
     res.render('pages/contact')
 })
 
+app.get('/contact2', (req, res) => {
+    res.render('pages/contact2')
+})
+
 app.get('/admin/thisismyoldroomhereitis100', (req, res) => {
     console.log('hi')
     knex('contacts')
@@ -37,15 +41,23 @@ app.post('/contact', (req, res) => {
         name: req.body.name,
         email: req.body.email,
         phone: req.body.phone,
-        body: req.body.body
+        body: req.body.body,
+        newsletter: req.body.newsletter
     }
     console.log(updatedBody)
     knex('contacts')
         .insert(updatedBody)
         .then(() => {
-            res.redirect('/contact')
-            console.log('Thank you!  I\'ll be in touch ASAP!')
+          res.redirect('/contact2')
+          console.log('Thank you!  I\'ll be in touch ASAP!')
         })
+})
+
+app.get('/contact/:id', (req, res) => {
+  knex('contacts').where('id', req.params.id).del()
+  .then(() => {
+    res.redirect('/admin/thisismyoldroomhereitis100')
+  })
 })
 
 

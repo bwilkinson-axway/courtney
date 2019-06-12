@@ -90,3 +90,9 @@ body {
   width: 80vw;
   margin-top: 10vh;
 }
+
+.onsubmit {
+  color: white;
+  text-shadow: 1px 1px 1px black,
+                -1px -1px 1px black;
+}
