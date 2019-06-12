@@ -216,12 +216,13 @@ a:hover {
 
 .navbar-default .navbar-nav>li>a {
   font-size: 60px;
+  margin-top: 30px;
 }
 
 .navbar-default .navbar-brand {
   font-size: 60px;
   padding: 50px;
-  padding-bottom: 80px; 
+  padding-bottom: 80px;
 }
 
 .yellow {
@@ -230,6 +231,28 @@ a:hover {
 
 #serve, #selling, #buying {
   width: 80vw;
+  font-size: 30px;
+}
+
+.jumbotron h1 {
+  font-size: 100px;
+}
+
+.links {
+  width: 80vw;
+}
+
+#logo {
+  width: 80vw;
+}
+
+#review h3{
+  text-align: center;
+  font-size: 30px;
+}
+
+.hide {
+  display: hidden;
 }
 
 }
