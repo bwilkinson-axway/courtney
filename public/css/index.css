@@ -227,6 +227,11 @@ a:hover {
   padding-bottom: 80px;
 }
 
+.navbar-brand {
+  width: 80vw;
+  text-align: center;
+}
+
 .yellow {
   flex-direction: column;
   height: auto;

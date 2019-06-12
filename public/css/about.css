@@ -130,6 +130,12 @@ body {
   flex-direction: row;
 }
 
+.navbar-brand {
+  width: 80vw;
+  text-align: center;
+}
+
+
 .photo {
   height: auto;
 }
