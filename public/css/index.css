@@ -242,6 +242,11 @@ a:hover {
   width: 80vw;
 }
 
+#sunset {
+  width: 80vw;
+  height: auto;
+}
+
 #logo {
   width: 80vw;
   height: auto;
