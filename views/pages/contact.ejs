@@ -14,26 +14,26 @@
     </header>
 
     <div class='container' id='splash'>
-      <form id='mainContact'>
+      <form id='mainContact' method='post' action='/contact'>
         <div class="form-group">
           <label for="exampleInputName">Name</label>
-          <input type="string" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="What is your name?">
+          <input name='name' type="string" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="What is your name?">
         </div>
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <input name='email' type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
           <label for="exampleInputEmail1">Phone Number</label>
-          <input type="string" class="form-control" id="exampleInputPhone" aria-describedby="PhoneHelp" placeholder="Enter phone number">
+          <input name='phone' type="string" class="form-control" id="exampleInputPhone" aria-describedby="PhoneHelp" placeholder="Enter phone number">
         </div>
         <div class="form-group">
           <label for="exampleFormControlTextarea1">How can I help?</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea name='body' class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <input name='newsletter' type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">I want to receive Courtney's newsletter!</label>
         </div>
         <button type="submit" class="btn btn-danger">Submit</button>

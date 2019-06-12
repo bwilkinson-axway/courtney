@@ -32,68 +32,21 @@ app.get('/admin/thisismyoldroomhereitis100', (req, res) => {
 
 })
 
-app.get('/admin/users/new', (req, res) => {
-    res.render('pages/newuser', {
-        user: {
-            firstName: '',
-            lastName: '',
-            handle: '',
-            displayRealName: '',
-            bio: '',
-            imgUrl:'',
-            admin: '',
-        }
-    })
-})
-
-app.get('/admin/users/:id', (req, res) => {
-    if (!req.params.id) return res.sendStatus(422)
-    knex('users')
-        .where('id', req.params.id)
-        .then(user => {
-            res.render('pages/user', { user: user[0] })
-        })
-})
-
-app.get('/admin/users/:id/edit', (req, res) => {
-    if (!req.params.id) return res.sendStatus(422)
-    knex('users')
-        .where('id', req.params.id)
-        .then(user => {
-            res.render('pages/edituser', { user: user[0] })
-        })
-})
-
-app.post('/api/admin/users/:id', (req, res) => { // should validate post body here using express-validator
-    if (!req.params.id) return res.sendStatus(422)
+app.post('/contact', (req, res) => {
     const updatedBody = {
-        ...req.body,
-        admin: req.body.admin === 'true' ? true : false,
-        displayRealName: req.body.displayRealName === 'true' ? true : false
+        name: req.body.name,
+        email: req.body.email,
+        phone: req.body.phone,
+        body: req.body.body
     }
-    knex('users')
-        .where('id', req.params.id)
-        .update(updatedBody)
-        .returning('*')
-        .then(user => {
-            res.render('pages/user', { user: user[0] })
-        })
-})
-
-app.post('/api/admin/users', (req, res) => { // should validate post body here using express-validator
-    const updatedBody = {
-        ...req.body,
-        admin: req.body.admin === 'true' ? true : false,
-        displayRealName: req.body.displayRealName === 'true' ? true : false
-    }
-    knex('users')
+    console.log(updatedBody)
+    knex('contacts')
         .insert(updatedBody)
-        .returning('*')
-        .then(user => {
-            res.render('pages/user', { user: user[0] })
+        .then(() => {
+            res.redirect('/contact')
+            console.log('Thank you!  I\'ll be in touch ASAP!')
         })
 })
 
-// let's do delete
 
 app.listen(process.env.PORT || 3000)
