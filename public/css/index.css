@@ -206,7 +206,7 @@ a:hover {
 .photo {
   background-repeat: no-repeat;
   background-size: cover;
-
+  height: auto;
 }
 
 .navbar-default .navbar-nav {
